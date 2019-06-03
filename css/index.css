@@ -102,16 +102,11 @@ header .logo {
     }
 
     .cta img{
-        display: none; 
-    }
-
-    .cta{
-        flex-direction: column; 
-        align-items: center;
+        display: none;
     }
 
    header .logo{
-        margin: 28px 91px 0 0;
+        margin: 0 auto; 
     }
 
 }
@@ -124,17 +119,23 @@ header .logo {
     nav{
         flex-direction: column;
         align-items: center;
-        margin: 40px 91px 0 0; 
+        margin: 0; 
     }
 
     nav a{
+        width: 100%; 
         border-bottom: 1px solid grey; 
         font-size: 24px;
-        margin: 0 0 40px 0;  
+        margin: 0;
+        text-align: center;
+        padding: 20px 0;     
+    }
+
+    nav a:first-child{
+        border-top: 1px solid grey; 
     }
 }
 /* Call To Action (CTA) Styles */
-
 .cta {
     display: flex;
     margin-top: 72px;
@@ -167,6 +168,21 @@ header .logo {
     color: white;
 }
 
+@media(max-width: 800px){
+     
+    .cta{
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .cta .cta-text{
+        margin: 0; 
+    }
+
+}
+
 /* Main Content Styles */
 
 .main-content {
@@ -195,7 +211,7 @@ header .logo {
 .main-content .bottom-content p {
     padding-right: 20px;
 }
-
+/* Tablet design */
 @media(max-width:800px){
     .main-content{
         padding: none;
@@ -210,6 +226,37 @@ header .logo {
     body{
         margin: 0 auto; 
     }
+
+}
+
+@media(max-width:500px){
+    .main-content{
+        padding: none; 
+    }
+    .top-content{
+        flex-direction: column;
+    }
+
+    .top-content p{
+        margin-bottom: 40px; 
+    }
+
+    .bottom-content{
+        flex-direction: column;
+    }
+
+    .bottom-content p{
+        margin-bottom: 40px; 
+    }
+
+    .middle-img{
+        margin: 0 auto; 
+    }
+
+    .middle-img{
+        padding: 0; 
+    }
+
 
 }
 
